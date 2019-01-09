@@ -117,7 +117,7 @@ In this section we will use the ```mongodump``` and ```mongorestore``` commands 
 * Set the following as environment variables. You can obtain these in the Azure Portal for your CosmosDB instance in the ```Connection String``` tab. 
 
 	> Note that we must set these again because in the earlier step, they were set inside the mongoDB pod. You should be at a shell prompt in the **Azure Cloud Shell** for this step.
-
+	> CAUTION: PLEASE DO NOT USE THE CONNECTION STRING IN THE PORTAL FOR COSMSOS DB. PLEASE USE THE CONNNECTION STRING CODE BELOW
 	```bash
 	# update the lines below with your config details
 	HOST=
