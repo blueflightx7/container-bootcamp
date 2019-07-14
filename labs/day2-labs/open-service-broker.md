@@ -44,7 +44,8 @@ az ad sp create-for-rbac --name osba-sp -o table
 
 ```bash
 # set the below to values for your sub
-export AZURE_SUBSCRIPTION_ID= Get ID using command "az account list | grep id"
+# !Get ID using command "az account list | grep id"
+export AZURE_SUBSCRIPTION_ID=<SubscriptionID>
 export AZURE_TENANT_ID=<Tenant>
 export AZURE_CLIENT_ID=<AppID>
 export AZURE_CLIENT_SECRET=<Password>
@@ -99,7 +100,7 @@ osba-redis-3506537388-f6k17                       1/1       Running   0         
 * This step will provision the entire application with the Cosmos Mongo DB back-end in Azure via OSBA.
 
 ```bash
-cd ~/blackbelt-aks-hackfest/labs/helper-files
+cd ~/container-bootcamp/labs/helper-files
 
 kubectl apply -f heroes-cosmosdb.yaml
 ```
@@ -157,3 +158,6 @@ az cosmosdb update -n $COSMOS_DB_ACCOUNT_NAME -g heroes-cosmosdb --capabilities 
 ```bash
 kubectl get svc
 ```
+
+
+   ##### [Return back to BootCamp Table of Contents (Main Page)](/README.md)

@@ -11,7 +11,7 @@ For the first container, we will be creating a Dockerfile from scratch. For the 
 1. Create a Dockerfile
 
     * Access the jumpbox
-    * In the `~/blackbelt-aks-hackfest/app/web` directory, add a file called "Dockerfile"
+    * In the `~/container-bootcamp/app/web` directory, add a file called "Dockerfile"
         * If you are in an SSH session, use vi as the editor
 
     * Add the following lines and save:
@@ -43,11 +43,13 @@ For the first container, we will be creating a Dockerfile from scratch. For the 
     From the terminal session: 
 
     ```
-    cd ~/blackbelt-aks-hackfest/app/web
+    cd ~/container-bootcamp/app/web
     
     docker build --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` --build-arg VCS_REF=`git rev-parse --short HEAD` --build-arg IMAGE_TAG_REF=v1 -t rating-web .
     ```
     **You can ignore the NPM warnings generated while the image is being built.**
+
+   **If you have an error regarding "Unable to evaluate symlinks, No such file or directory". Ensure the file name is correct including case-sensitivity**
 
 3. Once the above command is completed, validate that the image was created with command: `docker images`
    ```
@@ -64,7 +66,7 @@ In this step, the Dockerfile has been created for you.
 1. Create a container image for the node.js API app
 
     ```
-    cd ~/blackbelt-aks-hackfest/app/api
+    cd ~/container-bootcamp/app/api
 
     docker build -t rating-api .
     ```
@@ -83,7 +85,7 @@ In this step, the Dockerfile has been created for you.
 1. Create a MongoDB image with data files
 
     ```
-    cd ~/blackbelt-aks-hackfest/app/db
+    cd ~/container-bootcamp/app/db
 
     docker build -t rating-db .
     ```
@@ -127,6 +129,7 @@ docker network create --subnet=172.18.0.0/16 my-network
 
     ```
     root@61f9894538d0:/# ./import.sh
+    
     2018-01-10T19:26:07.746+0000	connected to: localhost
     2018-01-10T19:26:07.761+0000	imported 4 documents
     2018-01-10T19:26:07.776+0000	connected to: localhost
@@ -249,3 +252,7 @@ v1: digest: sha256:f84eba148dfe244f8f8ad0d4ea57ebf82b6ff41f27a903cbb7e3fbe377bb2
 ![img](img/02_acr_repositories.png)
 
 2. Click on the Repository name and under 'tags' section, you will see "v1" listed.
+
+
+
+   ##### [Return to BootCamp Table of Contents (Main Page)](/README.md)

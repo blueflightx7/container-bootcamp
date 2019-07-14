@@ -80,7 +80,7 @@ We will now deploy the application with a configured Ingress resource.
 1. Switch to `helper-files` directory. Clear anything out of your cluster by deleting your deployments
 
     ```bash
-    cd ~/blackbelt-aks-hackfest/labs/helper-files/
+    cd ~/container-bootcamp/labs/helper-files/
 
     # kubectl delete -f heroes-db.yaml
     kubectl delete -f heroes-web-api.yaml
@@ -216,3 +216,6 @@ Refresh the page multiple times and notice the change in the name of the pod and
 
 ![Screenshot2](img/web-heroes2.png "Web-Heroes2")
 
+
+
+   ##### [Return back to BootCamp Table of Contents (Main Page)](/README.md)

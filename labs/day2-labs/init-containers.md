@@ -30,9 +30,9 @@ Take note of the two files in this directory, [init-db-sample.yaml](init-db-samp
 
 3. Deploy the db to your cluster with the db yaml
     ```bash
-    cd ~/blackbelt-aks-hackfest/labs/helper-files
+    cd ~/container-bootcamp/labs/helper-files
 
-    $ kubectl create -f init-db-sample.yaml
+    kubectl create -f init-db-sample.yaml
     ```
 4. Modify the init-web-api-sample.yaml to add your imagePullSecrets as well as reference your container registry and image, 
 
@@ -85,7 +85,7 @@ Take note of the two files in this directory, [init-db-sample.yaml](init-db-samp
 
 6. Deploy the web and api app to your cluster with the modified yaml
     ```bash
-    $ kubectl create -f init-web-api-sample.yaml
+    kubectl create -f init-web-api-sample.yaml
     ```
     
 7. See the init containers getting creating one after the other by executing the below command
@@ -117,3 +117,7 @@ Take note of the two files in this directory, [init-db-sample.yaml](init-db-samp
     ```
  
  9. Access the web app using it's EXTERNAL-IP on Port 8080 and see if it works as expected 
+
+
+
+   ##### [Return back to BootCamp Table of Contents (Main Page)](/README.md)
