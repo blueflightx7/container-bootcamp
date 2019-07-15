@@ -1,25 +1,25 @@
-# Container and Kubernetes Bootcamp
+# Scaling Kubernetes with Istio
 
-_Delivering modern cloud native applications with ​open source technologies on Azure​_
+_Scale Kubernetes with a Service Mesh​_
 
 ## Overview
 
-Welcome to our Container Bootcamp, this workshop will guide you through migrating an application from "on-premise" server to containers running in Azure Kubernetes Service.
+Welcome to our Microsoft Ready Technical Lab, this workshop will guide you through understanding core tenants of a service mesh with a specific focus given to Istio.
 
-The labs are based upon a node.js application that allows for voting on the Justice League Superheroes (with more options coming soon). Data is stored in MongoDB.
+The labs are based upon two different applications with one being a node.js application that allows for voting on the Justice League Superheroes (with more options coming soon). The other being the sample application provided by Istio which can be [Found Here](https://istio.io/docs/examples/bookinfo/). For the first application data is stored in MongoDB.
 
-> Note: These labs are designed to run on a Linux CentOS VM running in Azure (jumpbox) along with Azure Cloud Shell. They can potentially be run locally on a Mac or Windows, but the instructions are not written towards that experience. ie - "You're on your own."
+> Note: These labs are designed to run on a Linux CentOS VM running in Azure (jumpbox) along with Azure Cloud Shell. They can potentially be run locally on a Mac or Windows, but the instructions are not written towards that experience. ie - "You're on your own."s
 
 > Note: Since we are working on a jumpbox, note that Copy and Paste are a bit different when working in the terminal. You can use Shift+Ctrl+C for Copy and Shift+Ctrl+V for Paste when working in the terminal. Outside of the terminal Copy and Paste behaves as expected using Ctrl+C and Ctrl+V. 
 
 ## Labs
 
-### Day 0 - BootCamp Pre-Work
+### Day 0 - Lab Pre-Work
 
-  0. [Welcome to Microsoft and Open Source](prework/readme/welcome.md)
-  1. Introduction to Linux (Coming Soon)
-  2. Introduction to the Linux Console (Coming Soon)
-  3. [Introduction to YAML](prework/readme/introtoyaml.md)
+  1. [Welcome to Microsoft and Open Source](prework/readme/welcome.md)
+  2. Introduction to Linux (Coming Soon)
+  3. Introduction to the Linux Console (Coming Soon)
+  4. [Introduction to YAML](prework/readme/introtoyaml.md)
  
 
 ### Day 1 - Introduction and Presentations
@@ -53,7 +53,7 @@ The labs are based upon a node.js application that allows for voting on the Just
   
 ## Contributing
 
-This project is a fork of our [Azure GBB Hackfest](https://github.com/Azure/blackbelt-aks-hackfest) workshop with necessary modifications and additions to suit the BootCamp. We as well as the original project welcomes contributions and suggestions. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.microsoft.com.
+This project is a fork of a fork of different projects that was then customized to match this technical lab. We welcome contributions and suggestions. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.microsoft.com.
 
 ## License
 
